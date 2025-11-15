@@ -30,4 +30,11 @@ Design references are available under `stitch_rxvision_app_welcome_screen/`, cov
 - `backend/`: Node.js + Express API scaffold prepared for DeepSeek OCR integration.
 - `stitch_rxvision_app_welcome_screen/`: Reference UI assets and HTML snippets for key flows.
 - `.env.example`: Sample environment variables for backend services.
+- `docs/`: Roadmap, architecture notes, and other planning artifacts.
+
+## Continuous Integration
+- Target CI platform: GitHub Actions with separate jobs for frontend (lint, Jest, Detox) and backend (eslint, unit, build).
+- Add Husky + lint-staged for pre-commit formatting and type checks.
+- Utilize Dependabot weekly for dependency updates across workspace.
+- Store secrets (`DEEPSEEK_API_KEY`, database URLs) in GitHub Actions environment with OIDC access to cloud secrets manager.
 
