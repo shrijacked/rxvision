@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prescription History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec5b",
+            "background-light": "#f6f8f6",
+            "background-dark": "#102216",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col overflow-x-hidden">
+<header class="flex shrink-0 items-center justify-between p-4 pb-2">
+<div class="flex size-12 shrink-0 items-center justify-start text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">Prescription History</h1>
+<div class="size-12 shrink-0"></div>
+</header>
+<div class="px-4 py-3">
+<label class="flex h-12 w-full min-w-40 flex-col">
+<div class="flex h-full w-full flex-1 items-stretch rounded-xl">
+<div class="flex items-center justify-center rounded-l-xl border-r-0 bg-primary/20 pl-4 text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input h-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl border-none bg-primary/20 px-4 text-base font-normal leading-normal text-zinc-900 placeholder:text-primary/70 focus:outline-0 focus:ring-0 dark:text-white dark:placeholder:text-primary/60" placeholder="Search by doctor or medication" value=""/>
+</div>
+</label>
+</div>
+<main class="flex-1 space-y-2 px-4">
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white/50 p-3 dark:bg-zinc-900/50">
+<div class="flex w-full items-center gap-4">
+<img class="aspect-square size-14 rounded-lg object-cover" data-alt="A slightly blurred image of a handwritten prescription on a clipboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNS_GhXT2E1Pj9bBglCDkzSfTIIWITAkKgeWsjDJP6EX4vSa-rLsELZ0Xw8-dYiDITjJD-T5VIym9l4tDYY0z-wdLxdJmOFaR3tRCRqD1XOIFBrjqF8dOtP1FTf4zk0RzIvIaHrrRl8JbDsgtBM58VUaJQa_UIwRsQ1juBjEKDR9gDGRdkuPGjafNqDlRZ494vdSRf0od3sDNZB89rcJsRQf6gisMSyfbjcH4DOZlv9e62u3_UckrxPM9mvQ4Q2SYVGRsBFjSJXp_j"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">Dr. Anya Sharma</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 line-clamp-2 dark:text-zinc-400">Scanned: October 26, 2023</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white/50 p-3 dark:bg-zinc-900/50">
+<div class="flex w-full items-center gap-4">
+<img class="aspect-square size-14 rounded-lg object-cover" data-alt="Close-up of a prescription form with a pen resting on it." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAInYwRJavd6LE71GCWS2UHEWs7ktd-YFZnefvLgMRLUtKo3ds-LEs-UtPFNFcDJTxP1j2VyLHPajnHu-v7nYQYIczrmbRT7azNYUKIodXA9ulotqu2Vza9MGWziiE8dt7Psvkna9Ioy-OkzTlSMwZycCwT9weZjymXWx8w-MK31LStUKoekUD3_Sq7B809Hqu2b6KFk8RhAOqDTByvdHd_UxprAUErpkoShnAi-1s_WZjhjKmMxzbN43D7tupG2gDVr3CQjDdFqFTC"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">Dr. John Smith</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 line-clamp-2 dark:text-zinc-400">Scanned: Nov 15, 2023</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex min-h-[72px] items-center gap-4 rounded-xl bg-white/50 p-3 dark:bg-zinc-900/50">
+<div class="flex w-full items-center gap-4">
+<img class="aspect-square size-14 rounded-lg object-cover" data-alt="Doctor's hands typing on a laptop with medical equipment on the desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdslIEBDsTYt0zoce833Bc5gxEiiZRQp0JWM7dPanuFMxBtjZLngW6y26Ki8Yw2hhwjKHfPiOQWQEWQ2Lfe80O4B29p4mj8e3jvLQY4mQksV8Dzxk6wUleLK2YOGXhtnmzWwtiSpgjZ7A1hQMBurswSiQPoj_-Vm8q_tBBCBS-ytGM4hHiklORt4jy3cuzY3--GqOqWp-q19RLD-DJ7_Nrzxdmds8LtqS7UoWWcnah7Iq4boUXnsoXFkZCKXbOHma3ASDK2KOlKUmM"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">Dr. Emily Chen</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 line-clamp-2 dark:text-zinc-400">Scanned: Sep 05, 2023</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 mt-8 flex w-full shrink-0 justify-around border-t border-primary/20 bg-background-light/80 p-2 backdrop-blur-sm dark:bg-background-dark/80">
+<div class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-primary/20 px-4 text-primary">
+<span class="material-symbols-outlined text-2xl">receipt_long</span>
+<span class="text-xs font-medium">Prescriptions</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="text-xs font-medium">Reminders</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</div>
+</footer>
+</div>
+</body></html>

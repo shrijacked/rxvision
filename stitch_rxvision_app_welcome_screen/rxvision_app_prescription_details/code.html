@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prescription Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec5b",
+              "background-light": "#f6f8f6",
+              "background-dark": "#102216",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex h-16 items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4">
+<div class="flex-none">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+<h1 class="flex-grow text-center text-lg font-bold text-black dark:text-white">Prescription Details</h1>
+<div class="flex-none">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</header>
+<main class="flex-grow px-4 pb-32">
+<section class="mt-4 rounded-xl bg-green-500/10 dark:bg-primary/10 p-4">
+<div class="flex items-center justify-between gap-4">
+<p class="text-sm font-medium text-black dark:text-white">Interpretation Confidence</p>
+<p class="text-sm font-bold text-primary">95%</p>
+</div>
+<div class="mt-2 h-2 w-full rounded-full bg-black/10 dark:bg-white/10">
+<div class="h-2 rounded-full bg-primary" style="width: 95%;"></div>
+</div>
+</section>
+<p class="mt-4 text-center text-xs text-gray-500 dark:text-gray-400">
+            This is an AI-generated interpretation. Tap any field to edit and verify details before saving.
+        </p>
+<h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Medications</h2>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-[#1C2C21] p-4 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">pill</span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-lg font-bold text-black dark:text-white">Amoxicillin</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-sm text-gray-600 dark:text-gray-300">500mg, 1 tablet</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-gray-200 dark:bg-gray-700"></div>
+<div class="space-y-2">
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-base text-black dark:text-white">Take twice daily for 7 days</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-sm text-gray-500 dark:text-gray-400">With food, once in the morning and once at night.</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex flex-col gap-4 rounded-xl bg-white dark:bg-[#1C2C21] p-4 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">ventilator</span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-lg font-bold text-black dark:text-white">Albuterol Sulfate HFA</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-sm text-gray-600 dark:text-gray-300">90mcg per inhalation</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-gray-200 dark:bg-gray-700"></div>
+<div class="space-y-2">
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-base text-black dark:text-white">Inhale 2 puffs every 4-6 hours</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+<div class="group relative rounded-md border border-dashed border-primary/50 bg-primary/10 px-3 py-2">
+<p class="text-sm text-gray-500 dark:text-gray-400">As needed for shortness of breath.</p>
+<div class="absolute inset-y-0 right-2 flex cursor-pointer items-center">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex flex-col gap-4 rounded-xl border border-yellow-500/50 bg-yellow-500/10 p-4 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-yellow-500/20 text-yellow-500">
+<span class="material-symbols-outlined">visibility_off</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold text-black dark:text-white">Illegible - Please Verify</p>
+<p class="text-sm text-yellow-700 dark:text-yellow-300">AI could not confidently read this item.</p>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500/20 text-yellow-600 dark:text-yellow-300">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center gap-4">
+<button class="inline-flex items-center justify-center gap-2 rounded-lg bg-transparent text-primary hover:bg-primary/10 px-4 py-2 text-sm font-semibold transition-colors">
+<span class="material-symbols-outlined">image</span>
+                Show Original
+            </button>
+<button class="flex w-full max-w-xs items-center justify-center gap-2 rounded-xl bg-primary px-6 py-4 text-base font-bold text-black dark:text-background-dark shadow-lg shadow-primary/30 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined">save</span>
+                Save Verified
+            </button>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 z-20 w-full border-t border-black/10 bg-background-light/80 dark:border-white/10 dark:bg-background-dark/80 backdrop-blur-sm">
+<nav class="flex h-20 items-center justify-around px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="text-xs font-bold">Prescriptions</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">Reminders</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

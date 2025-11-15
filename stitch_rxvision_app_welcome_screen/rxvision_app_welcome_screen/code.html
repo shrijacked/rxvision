@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RxVision Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#10B981", // Emerald 500
+            secondary: "#FF7F50", // Coral (can remain if not used or updated later)
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+            "text-light": "#2F4F4F",
+            "text-dark": "#F8F9FA"
+          },
+          fontFamily: {
+            display: "Space Grotesk"
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<main class="flex flex-1 flex-col px-4 pt-8 pb-20">
+<div class="mb-6 rounded-xl bg-white dark:bg-background-dark/90 p-6 text-center shadow-lg">
+<h1 class="text-3xl font-bold text-text-light dark:text-text-dark mb-2">Hello, [User's Name]!</h1>
+<p class="text-text-light/70 dark:text-text-dark/70 mb-6">Welcome back to your prescription dashboard.</p>
+<button class="flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-primary text-white dark:text-text-dark font-bold text-lg shadow-lg hover:bg-primary/90 transition-colors w-full">
+<span class="material-symbols-outlined text-4xl">add_a_photo</span>
+<span>Scan New Prescription</span>
+</button>
+</div>
+<div class="flex-grow flex flex-col gap-6">
+<div class="bg-white dark:bg-background-dark/90 rounded-xl shadow-xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Upcoming Reminders</h3>
+<a class="text-primary text-base font-medium" href="#">View All</a>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-background-dark rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">alarm</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark text-lg">Amoxicillin 500mg</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Today, 2:00 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-background-dark rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">alarm</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark text-lg">Ibuprofen 200mg</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Tomorrow, 9:00 AM</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/90 rounded-xl shadow-xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Recently Scanned</h3>
+<a class="text-primary text-base font-medium" href="#">View All</a>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-background-dark rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark text-lg">Dr. Smith - 2023-10-26</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Amoxicillin, Azithromycin</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 bg-background-light dark:bg-background-dark rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark text-lg">Dr. Jones - 2023-10-20</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Paracetamol, Ibuprofen</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 mt-auto border-t border-gray-200 bg-background-light/90 dark:border-gray-700/80 dark:bg-background-dark/90 backdrop-blur-sm">
+<nav class="flex h-16 items-center justify-around px-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-center text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-center text-text-light/70 dark:text-text-dark/70" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-xs font-medium">Prescriptions</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-center text-text-light/70 dark:text-text-dark/70" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">Reminders</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-center text-text-light/70 dark:text-text-dark/70" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
