@@ -22,4 +22,6 @@ Design references are available under `stitch_rxvision_app_welcome_screen/`, cov
 ## Status
 - Repository scaffolding and assets imported.
 - Planning and implementation in progress.
+- React Native app scaffold (`RxVisionApp/`) generated with TypeScript template.
+- Pending: remote push blocked by missing GitHub credentials (`fatal: could not read Username for 'https://github.com': Device not configured`).
 
